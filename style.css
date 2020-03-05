@@ -1,0 +1,151 @@
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    background:#eee;
+  
+}
+
+
+h1{
+    font-weight:400px;
+    font-size:2.5rem;
+    text-transform:uppercase;
+    margin:0;
+
+}
+
+h2{
+    font-weight:400px;
+    font-size:1.2rem;
+    text-transform:capitalize;
+    margin:0;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+main{
+    max-width:900px;
+    margin:auto;
+    box-shadow:30px 0px 40px rgba(0,0,0,0.5),
+    -30px 0px 40px rgba(0,0,0,0.1);
+}
+
+#landing{
+    background:#fff;
+  
+}
+
+#landing-text{
+    display:flex;
+    flex: 0 1 40vw;
+    height:50vh;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+
+#landing-text h2{
+    color:#888;
+    margin-top:5px;
+}
+
+#landing-image{
+    background:url("images/office.jpeg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex:0 1 60vw;
+    margin: 0;
+    height:50vh;
+}
+
+.btn{
+    padding:0.5rem 2rem;
+    border:1px #ccc solid;
+    display:inline-block;
+    border-radius:3px;
+    /*  the first 2 rem is for the top  */
+    margin:1rem 0 0 ;
+    text-decoration:none;
+    color:#333;
+    transition:background 5s ease-in;
+}
+
+.btn:hover{
+    background:#b9b9b9;
+}
+
+#header{
+    padding:1.5rem;
+    text-align:center;
+    background:#333;
+    color:#fff;
+}
+
+#header h2{
+    border-left:dotted 1px #fff;
+    border-right:dotted 1px #fff;
+    display:inline-block;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+
+.caption{
+    padding:0.8rem;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:2rem;
+    margin:auto;
+    color:#333;
+    background:#c3c3c3;
+    max-width:840px;
+    margin-bottom:.3rem;
+    box-shadow:30px 0px 30px rgba(0,0,0,0.2),
+    -30px 0px 30px rgba(0,0,0,0.1);
+    height:50vh;
+}
+
+footer h3{
+    font-size:1.5rem;
+    color:#333;
+
+}
+
+
+/* screen of 500px and up */
+@media(min-width:500px){
+    #landing{
+        display:flex;
+        height:100%;
+
+      
+    }
+
+    #landing-text{
+        height:100vh;
+    }
+
+    #landing-image{
+        height:100vh;
+    }
+
+    footer{
+        height:21vh;
+    }
+}
+
+/* screen of 700px and up */
+@media(min-width:700px){
+    .btn{
+        padding:1rem 3rem;
+    }
+}
